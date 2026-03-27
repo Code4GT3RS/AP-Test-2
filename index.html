@@ -1,28 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Data Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <div class="bg-wrapper">
-        <div class="glow-blob"></div>
-        <div class="glow-blob secondary"></div>
-        <div class="glow-blob tertiary"></div>
-    </div>
 
-    <nav class="glass-nav">
-        <div class="logo">STRAT<span>ANALYTICS</span></div>
-        <ul class="nav-links">
-            <li><a href="#about">The Edge</a></li>
-            <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#contact" class="nav-cta">Work With Me</a></li>
-        </ul>
+    <nav>
+        <div class="logo">DATA<span>STRAT</span></div>
+        <div class="nav-links">
+            <a href="#projects">Portfolio</a>
+            <a href="mailto:your@email.com" class="btn-sm">Contact Me</a>
+        </div>
     </nav>
 
-    <header class="hero-section">
-        <div class="hero-content" data-aos="fade-up">
-            <div class="badge">Functional & Technical Specialist</div>
-            <h1>The Bridge Between <span class="gradient-text">Complex Data</span> & <span class="gradient-text">Market Growth</span></h1>
-            <p>I translate raw data into executive strategy for PR, Sales, and Advertising teams.</p>
-            <div class="btn-group">
-                <a href="#projects" class="btn-glow">Explore Case Studies</a>
-                <a href="#about" class="btn-outline">My Process</a>
+    <header class="hero">
+        <div class="container">
+            <span class="badge">Functional & Technical Analyst</span>
+            <h1>Bridging Data Science & <span class="text-gradient">Marketing Strategy</span></h1>
+            <p class="lead">I translate complex analytical stacks into actionable growth for PR, Sales, and Advertising teams.</p>
+            <div class="cta-group">
+                <a href="#projects" class="btn-primary">View Case Studies</a>
+                <a href="#" class="btn-secondary">Download CV</a>
             </div>
         </div>
     </header>
-    </body>
+
+    <section class="expertise">
+        <div class="container grid-3">
+            <div class="stat-card">
+                <i data-lucide="bar-chart-2"></i>
+                <h3>Technical</h3>
+                <p>SQL, Python, & ETL pipelines built for scale.</p>
+            </div>
+            <div class="stat-card">
+                <i data-lucide="megaphone"></i>
+                <h3>Functional</h3>
+                <p>Media attribution and PR sentiment analysis.</p>
+            </div>
+            <div class="stat-card">
+                <i data-lucide="refresh-cw"></i>
+                <h3>Hybrid</h3>
+                <p>Translating "Data Speak" for executive stakeholders.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-card">
+                <div class="project-content">
+                    <span class="tag">Marketing Analytics</span>
+                    <h3>Ad Spend Attribution Model</h3>
+                    <p>A Python-based model determining the true ROI of digital advertising spend across fragmented media channels.</p>
+                    <a href="#" class="link">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>lucide.createIcons();</script>
+</body>
+</html>
